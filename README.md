@@ -22,3 +22,9 @@ In the project directory, you can run:
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+
+### cypress script
+1. naviagte to root directory `/counter-app`
+2. `npm run cypress:open` (headless:false)
+3. `npx cypress run` (headless:true)

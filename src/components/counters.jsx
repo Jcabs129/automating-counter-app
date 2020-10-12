@@ -14,6 +14,7 @@ class Counters extends Component {
     return (
       <div>
         <button
+          data-qa="refreshBtn"
           className="btn btn-success m-2"
           onClick={onReset}
           disabled={counters.length === 0 ? "disabled" : ""}
@@ -21,6 +22,7 @@ class Counters extends Component {
           <i className="fa fa-refresh" aria-hidden="true" />
         </button>
         <button
+          data-qa="recycleBtn"
           className="btn btn-primary m-2"
           onClick={onRestart}
           disabled={counters.length !== 0 ? "disabled" : ""}
