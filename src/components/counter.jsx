@@ -12,12 +12,14 @@ class Counter extends Component {
           </div>
           <div className="col-md-4">
             <button
+              data-qa="incrementBtn"
               className="btn btn-secondary"
               onClick={() => this.props.onIncrement(this.props.counter)}
             >
               <i className="fa fa-plus-circle" aria-hidden="true" />
             </button>
             <button
+              data-qa="decrementBtn"
               className="btn btn-info m-2"
               onClick={() => this.props.onDecrement(this.props.counter)}
               disabled={this.props.counter.value === 0 ? "disabled" : ""}
@@ -25,6 +27,7 @@ class Counter extends Component {
               <i className="fa fa-minus-circle" aria-hidden="true" />
             </button>
             <button
+              data-qa="deleteItemBtn"
               className="btn btn-danger"
               onClick={() => this.props.onDelete(this.props.counter.id)}
             >
