@@ -30,7 +30,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 3. `npx cypress run` (headless:true)
 
 ### jest and enzyme setup
-https://medium.com/@savan.chhayani/setup-enzyme-and-jest-for-the-react-application-ecf49ee1dfc5
+
 
 1. To run a single file - `npm run test app.test.js`
 2. To run all the tests - `npm run test`
+
+material
+
+https://medium.com/@savan.chhayani/setup-enzyme-and-jest-for-the-react-application-ecf49ee1dfc5
+
+https://blog.usejournal.com/testing-with-jest-and-enzyme-in-react-part-3-best-practices-when-testing-with-jest-and-enzyme-ae3fe0c39d06
