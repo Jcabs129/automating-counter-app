@@ -28,3 +28,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 1. naviagte to root directory `/counter-app`
 2. `npm run cypress:open` (headless:false)
 3. `npx cypress run` (headless:true)
+
+### jest and enzyme setup
+https://medium.com/@savan.chhayani/setup-enzyme-and-jest-for-the-react-application-ecf49ee1dfc5
+
+1. To run a single file - `npm run test app.test.js`
+2. To run all the tests - `npm run test`
