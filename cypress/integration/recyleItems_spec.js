@@ -9,14 +9,11 @@ describe('counter page - recycle all items', () => {
   })
 
   it ('Must delete all items on page then hit recycle button to view all items again', () => {
-    cy
-      .get(counterPage.deleteItemBtn).eq(0).click()
-      .get(counterPage.deleteItemBtn).eq(0).click()
-      .get(counterPage.deleteItemBtn).eq(0).click()
-      .get(counterPage.deleteItemBtn).eq(0).click()
-      .get(counterPage.recycleBtn).click()
-      // validation
-      .get(counterPage.shoppingBadge).contains('0')
+        counterPage.deleteItems()
+      cy
+        .get(counterPage.recycleBtn).click()
+        // validation
+        .get(counterPage.shoppingBadge).contains('0')
       
   })
 })

@@ -1,11 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import counter from '../components/counter'
+import Counter from '../components/counter.jsx'
 
 
 
 describe('counter - button', () => {
-  
+
+//   it('', () => {
+//     const wrapper = shallow(<Counter store={store} />);
+//     expect(wrapper.containsMatchingElement(<Child />)).toEqual(true);
+//   })
+// })
 //   it('', () => {
 //     expect(counter).toBeDefined();
 //   });
@@ -25,12 +30,11 @@ describe('counter - button', () => {
 // })
 it('', () => {
   const mockFn = jest.fn();
-  const wrapper = shallow(
-    <counter className="btn btn-secondary" handleClick={mockFn} />
+  const tree = shallow(<Counter name=".btn btn-secondary" handleClick={mockFn} />
   )
-  const button = wrapper.find('.btn btn-secondary')
-  expect(button.exists()).toEqual(true)
-  // .simulate('click');
-  // expect(mockFn).toHaveBeenCalled();
+  // const button = tree.find('.btn btn-secondary')
+  // expect(button.exists()).toEqual(true) 
+  .simulate('click');
+  expect(tree.mockFn).toHaveBeenCalledWith('warning');
   })
 })

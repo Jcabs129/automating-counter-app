@@ -15,5 +15,9 @@ describe('Shoppping cart should be able to update according to the amount of ite
       .get(counterPage.incrementBtn).eq(2).dblclick()
       // Validation shopping badge navBar
       .get(counterPage.shoppingBadge).contains('2')
+      .get(counterPage.refreshItemsList).click()
+      // Validation
+      .get(counterPage.zeroItemBadge).eq(0).contains('Zero')
+      .get(counterPage.zeroItemBadge).eq(2).contains('Zero')
   })
 })
