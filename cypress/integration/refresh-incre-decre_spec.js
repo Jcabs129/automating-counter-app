@@ -9,8 +9,8 @@ describe('Should be able to refresh all Items that have been incremented', () =>
   })
   it('refresh all incremented items', () => {
       counterPage.incrementItemsMultiple()
-      cy
-        .get(counterPage.refreshItemsList).click()
-        .get(counterPage.zeroItemBadge).contains('Zero')
+    cy
+      .get(counterPage.refreshItemsList).click()
+      .get(counterPage.zeroItemBadge).contains('Zero')
   })
 })

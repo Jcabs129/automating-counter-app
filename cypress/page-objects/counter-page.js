@@ -23,10 +23,18 @@ export default class Counterpage {
       .get(this.deleteItemBtn).eq(0).click()
 
   }
+
+  incretwoItems() {
+  cy
+    .get(this.incrementBtn).eq(0).dblclick()
+    .get(this.incrementBtn).eq(2).dblclick()
+  }
+
+
   incrementItemsMultiple() {
     cy
-      .get(this.incrementBtn).eq(0).click()
-      .get(this.incrementBtn).eq(1).click()
+      .get(this.incrementBtn).eq(0).dblclick()
+      .get(this.incrementBtn).eq(1).dblclick()
       .get(this.incrementBtn).eq(2).click()
       .get(this.incrementBtn).eq(3).click()
   }
